@@ -50,3 +50,22 @@ while True:
 
 `message.append()`附加内容
 
+## 3. git
+`git commit -m ""`添加提交
+
+`git remote -M main"` `git remote` 表示操作远程仓库 `-m -M`报错/不报错 重命名
+
+`git remote add origin 仓库地址` `origin`是仓库地址的别名
+
+`git push -u(--set-upstream) origin main` `-u`表示设置上游分支 初次时使用
+
+
+## 常见报错
+
+| 报错 | 原因 | 解决 |
+|---|---|---|
+| `401 Unauthorized` | Key 错或 `.env` 没加载 | 检查 `.env` 和变量名 |
+| `404 model not found` | `BASE_URL` 或 `MODEL` 不对 | 核对平台文档 |
+| `429` | 余额不足/限流 | 换 key 或稍后再试 |
+| `Connection error` | 网络/代理 | 检查网络 |
+| `ModuleNotFoundError` | 没激活虚拟环境 | 重新 activate |
