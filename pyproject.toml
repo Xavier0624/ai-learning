@@ -1,0 +1,20 @@
+[project]
+name = "ai-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "萧飞 郝", email = "3247152880@qq.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "openai>=3.35.1",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+ai-learning = "ai_learning:main"
+
+[build-system]
+requires = ["uv_build>=0.13.2,<0.14.0"]
+build-backend = "uv_build"
